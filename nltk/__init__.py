@@ -128,45 +128,45 @@ if not hasattr(subprocess, "Popen"):
 # TOP-LEVEL MODULES
 ###########################################################
 
-# Import top-level functionality into top-level namespace
+# DO NOT Import top-level functionality into top-level namespace
 
-from nltk.collocations import *
-from nltk.decorators import decorator, memoize
-from nltk.featstruct import *
-from nltk.grammar import *
-from nltk.probability import *
-from nltk.text import *
-from nltk.util import *
-from nltk.jsontags import *
+# from nltk.collocations import *
+# from nltk.decorators import decorator, memoize
+# from nltk.featstruct import *
+# from nltk.grammar import *
+# from nltk.probability import *
+# from nltk.text import *
+# from nltk.util import *
+# from nltk.jsontags import *
 
 ###########################################################
 # PACKAGES
 ###########################################################
 
-from nltk.chunk import *
-from nltk.classify import *
-from nltk.inference import *
-from nltk.metrics import *
-from nltk.parse import *
-from nltk.tag import *
-from nltk.tokenize import *
-from nltk.translate import *
-from nltk.tree import *
-from nltk.sem import *
-from nltk.stem import *
+# from nltk.chunk import *
+# from nltk.classify import *
+# from nltk.inference import *
+# from nltk.metrics import *
+# from nltk.parse import *
+# from nltk.tag import *
+# from nltk.tokenize import *
+# from nltk.translate import *
+# from nltk.tree import *
+# from nltk.sem import *
+# from nltk.stem import *
 
 # Packages which can be lazily imported
 # (a) we don't import *
 # (b) they're slow to import or have run-time dependencies
 #     that can safely fail at run time
 
-from nltk import lazyimport
+# from nltk import lazyimport
 
-app = lazyimport.LazyModule("app", locals(), globals())
-chat = lazyimport.LazyModule("chat", locals(), globals())
-corpus = lazyimport.LazyModule("corpus", locals(), globals())
-draw = lazyimport.LazyModule("draw", locals(), globals())
-toolbox = lazyimport.LazyModule("toolbox", locals(), globals())
+# app = lazyimport.LazyModule("app", locals(), globals())
+# chat = lazyimport.LazyModule("chat", locals(), globals())
+# corpus = lazyimport.LazyModule("corpus", locals(), globals())
+# draw = lazyimport.LazyModule("draw", locals(), globals())
+# toolbox = lazyimport.LazyModule("toolbox", locals(), globals())
 
 # Optional loading
 
@@ -177,7 +177,7 @@ except ImportError:
 else:
     from nltk import cluster
 
-from nltk.downloader import download, download_shell
+# from nltk.downloader import download, download_shell
 
 try:
     import tkinter
@@ -198,10 +198,10 @@ else:
 # they override the same names inadvertently imported
 # from a subpackage)
 
-from nltk import ccg, chunk, classify, collocations
-from nltk import data, featstruct, grammar, help, inference, metrics
-from nltk import misc, parse, probability, sem, stem, wsd
-from nltk import tag, tbl, text, tokenize, translate, tree, util
+# from nltk import ccg, chunk, classify, collocations
+# from nltk import data, featstruct, grammar, help, inference, metrics
+# from nltk import misc, parse, probability, sem, stem, wsd
+# from nltk import tag, tbl, text, tokenize, translate, tree, util
 
 
 # FIXME:  override any accidentally imported demo, see https://github.com/nltk/nltk/issues/2116
