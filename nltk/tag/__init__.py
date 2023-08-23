@@ -65,30 +65,32 @@ For more information, please consult chapter 5 of the NLTK Book.
 isort:skip_file
 """
 
-from nltk.tag.api import TaggerI
-from nltk.tag.util import str2tuple, tuple2str, untag
-from nltk.tag.sequential import (
-    SequentialBackoffTagger,
-    ContextTagger,
-    DefaultTagger,
-    NgramTagger,
-    UnigramTagger,
-    BigramTagger,
-    TrigramTagger,
-    AffixTagger,
-    RegexpTagger,
-    ClassifierBasedTagger,
-    ClassifierBasedPOSTagger,
-)
-from nltk.tag.brill import BrillTagger
-from nltk.tag.brill_trainer import BrillTaggerTrainer
-from nltk.tag.tnt import TnT
-from nltk.tag.hunpos import HunposTagger
-from nltk.tag.stanford import StanfordTagger, StanfordPOSTagger, StanfordNERTagger
-from nltk.tag.hmm import HiddenMarkovModelTagger, HiddenMarkovModelTrainer
-from nltk.tag.senna import SennaTagger, SennaChunkTagger, SennaNERTagger
+# DO NOT PRELOAD ALL SUBMODULES
+# from nltk.tag.api import TaggerI
+# from nltk.tag.util import str2tuple, tuple2str, untag
+# from nltk.tag.sequential import (
+#     SequentialBackoffTagger,
+#     ContextTagger,
+#     DefaultTagger,
+#     NgramTagger,
+#     UnigramTagger,
+#     BigramTagger,
+#     TrigramTagger,
+#     AffixTagger,
+#     RegexpTagger,
+#     ClassifierBasedTagger,
+#     ClassifierBasedPOSTagger,
+# )
+# from nltk.tag.brill import BrillTagger
+# from nltk.tag.brill_trainer import BrillTaggerTrainer
+# from nltk.tag.tnt import TnT
+# from nltk.tag.hunpos import HunposTagger
+# from nltk.tag.stanford import StanfordTagger, StanfordPOSTagger, StanfordNERTagger
+# from nltk.tag.hmm import HiddenMarkovModelTagger, HiddenMarkovModelTrainer
+# from nltk.tag.senna import SennaTagger, SennaChunkTagger, SennaNERTagger
 from nltk.tag.mapping import tagset_mapping, map_tag
-from nltk.tag.crf import CRFTagger
+
+# from nltk.tag.crf import CRFTagger
 from nltk.tag.perceptron import PerceptronTagger
 
 from nltk.data import load, find
