@@ -179,20 +179,20 @@ else:
 
 # from nltk.downloader import download, download_shell
 
-try:
-    import tkinter
-except ImportError:
-    pass
-else:
-    try:
-        from nltk.downloader import download_gui
-    except RuntimeError as e:
-        import warnings
+# try:
+#     import tkinter
+# except ImportError:
+#     pass
+# else:
+#     try:
+#         from nltk.downloader import download_gui
+#     except RuntimeError as e:
+#         import warnings
 
-        warnings.warn(
-            "Corpus downloader GUI not loaded "
-            "(RuntimeError during import: %s)" % str(e)
-        )
+#         warnings.warn(
+#             "Corpus downloader GUI not loaded "
+#             "(RuntimeError during import: %s)" % str(e)
+#         )
 
 # explicitly import all top-level modules (ensuring
 # they override the same names inadvertently imported
